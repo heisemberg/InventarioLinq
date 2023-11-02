@@ -56,7 +56,7 @@ namespace InventarioLinq.Clases
 
         public void ListarAgotados(){
             var consulta = from p in productos
-                           where p.Cantidad < 5
+                           where p.Cantidad < p.StockMinimo
                            select p;
             foreach (var item in consulta)
             {
@@ -115,9 +115,6 @@ namespace InventarioLinq.Clases
 
     }
 }
-
-
-
 
 
 
