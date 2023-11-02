@@ -9,11 +9,11 @@ namespace InventarioLinq.Clases
     public class Linq
     {
         List<Productos> productos = new List<Productos>(){
-            new Productos { IdProducto = 1, NombreProducto = "Arroz", PrecioUnidad = 1000, Cantidad = 4, StockMinimo = 5, StockMaximo = 20 },
-            new Productos { IdProducto = 2, NombreProducto = "Panela", PrecioUnidad = 2000, Cantidad = 20, StockMinimo = 5, StockMaximo = 20 },
-            new Productos { IdProducto = 3, NombreProducto = "Papa", PrecioUnidad = 3000, Cantidad = 30, StockMinimo = 5, StockMaximo = 20 },
-            new Productos { IdProducto = 4, NombreProducto = "Yuca", PrecioUnidad = 4000, Cantidad = 40, StockMinimo = 5, StockMaximo = 20 },
-            new Productos { IdProducto = 5, NombreProducto = "Tomate", PrecioUnidad = 5000, Cantidad = 50, StockMinimo = 5, StockMaximo = 20 }
+            new Productos { IdProducto = 1, NombreProducto = "Caja Puntillas", PrecioUnidad = 1000, Cantidad = 4, StockMinimo = 5, StockMaximo = 20 },
+            new Productos { IdProducto = 2, NombreProducto = "Cinta", PrecioUnidad = 2000, Cantidad = 20, StockMinimo = 5, StockMaximo = 20 },
+            new Productos { IdProducto = 3, NombreProducto = "Metro", PrecioUnidad = 3000, Cantidad = 30, StockMinimo = 5, StockMaximo = 20 },
+            new Productos { IdProducto = 4, NombreProducto = "Toma Corriente", PrecioUnidad = 4000, Cantidad = 40, StockMinimo = 5, StockMaximo = 20 },
+            new Productos { IdProducto = 5, NombreProducto = "Bombillo", PrecioUnidad = 5000, Cantidad = 50, StockMinimo = 5, StockMaximo = 20 }
         };
 
         List<Cliente> clientes = new List<Cliente>(){
