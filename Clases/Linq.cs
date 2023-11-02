@@ -27,8 +27,8 @@ namespace InventarioLinq.Clases
         List<Factura> facturas = new  List<Factura>(){
             new Factura { NroFactura = 1, Fecha = new DateTime(2023, 11, 22), IdCliente = 5, TotalFactura = 14000 },
             new Factura { NroFactura = 2, Fecha = new DateTime(2023, 1, 24), IdCliente = 4, TotalFactura = 19000 },
-            new Factura { NroFactura = 3, Fecha = new DateTime(2023, 1, 3), IdCliente = 3, TotalFactura = 30000 },
-            new Factura { NroFactura = 4, Fecha = new DateTime(2023, 8, 14), IdCliente = 2, TotalFactura = 40000 },
+            new Factura { NroFactura = 3, Fecha = new DateTime(2023, 1, 3), IdCliente = 3, TotalFactura = 44000 },
+            new Factura { NroFactura = 4, Fecha = new DateTime(2023, 8, 14), IdCliente = 2, TotalFactura = 36000 },
             new Factura { NroFactura = 5, Fecha = new DateTime(2023, 5, 5), IdCliente = 1, TotalFactura = 50000 }
         };
 
