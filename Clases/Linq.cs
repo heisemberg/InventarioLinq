@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
 namespace InventarioLinq.Clases
@@ -25,8 +26,8 @@ namespace InventarioLinq.Clases
 
         List<Factura> facturas = new  List<Factura>(){
             new Factura { NroFactura = 1, Fecha = new DateTime(2023, 11, 22), IdCliente = 5, TotalFactura = 14000 },
-            new Factura { NroFactura = 2, Fecha = new DateTime(2023, 2, 24), IdCliente = 4, TotalFactura = 19000 },
-            new Factura { NroFactura = 3, Fecha = new DateTime(2023, 3, 3), IdCliente = 3, TotalFactura = 30000 },
+            new Factura { NroFactura = 2, Fecha = new DateTime(2023, 1, 24), IdCliente = 4, TotalFactura = 19000 },
+            new Factura { NroFactura = 3, Fecha = new DateTime(2023, 1, 3), IdCliente = 3, TotalFactura = 30000 },
             new Factura { NroFactura = 4, Fecha = new DateTime(2023, 8, 14), IdCliente = 2, TotalFactura = 40000 },
             new Factura { NroFactura = 5, Fecha = new DateTime(2023, 5, 5), IdCliente = 1, TotalFactura = 50000 }
         };
@@ -65,18 +66,67 @@ namespace InventarioLinq.Clases
 
         public void ProductosComprar(){
             var consulta = from p in productos
-                           where p.Cantidad < 5
-                           select p;
+                           where p.Cantidad < p.StockMinimo
+                           select new ProductoComprarDto(){
+                                     Producto = p.NombreProducto, 
+                                     Total= p.StockMaximo-p.Cantidad};
 
             foreach (var item in consulta)
             {
-                Console.WriteLine(item.NombreProducto + " " + (item.StockMaximo-item.Cantidad));
+                Console.WriteLine(item.Producto + " " + item.Total);
+            }
+        }
+
+        public void FacturasEnero(){
+            var consulta = from p in facturas
+                            where p.Fecha.Month == 1 &&  p.Fecha.Year == 2023
+                            select p;
+
+            foreach (var item in consulta)
+            {
+                Console.WriteLine(item.NroFactura);
+            }
+        }
+
+        public void ListarProductosFactura(){
+            Console.WriteLine("Ingrese el numero de factura");
+            int nroFactura = int.Parse(Console.ReadLine());
+
+            var consulta = from p in detalleFacts
+                            join pr in productos 
+                            on p.IdProducto equals pr.IdProducto
+                            where p.NroFactura == nroFactura
+                            select new {pr.NombreProducto, p.Cantidad, p.Valor};
+            
+            foreach (var item in consulta)
+            {
+                Console.WriteLine(item.NombreProducto + " " + item.Cantidad + " " + item.Valor);
             }
         }
 
 
+        public void ValorTotalInventario(){
+            var consulta = from p in productos
+                            select p.PrecioUnidad * p.Cantidad;
+            double total = consulta.Sum();
 
-
+            Console.WriteLine(total);   
+        }
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
