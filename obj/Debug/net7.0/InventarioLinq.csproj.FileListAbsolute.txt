@@ -1,0 +1,14 @@
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\bin\Debug\net7.0\InventarioLinq.exe
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\bin\Debug\net7.0\InventarioLinq.deps.json
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\bin\Debug\net7.0\InventarioLinq.runtimeconfig.json
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\bin\Debug\net7.0\InventarioLinq.dll
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\bin\Debug\net7.0\InventarioLinq.pdb
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\obj\Debug\net7.0\InventarioLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\obj\Debug\net7.0\InventarioLinq.AssemblyInfoInputs.cache
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\obj\Debug\net7.0\InventarioLinq.AssemblyInfo.cs
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\obj\Debug\net7.0\InventarioLinq.csproj.CoreCompileInputs.cache
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\obj\Debug\net7.0\InventarioLinq.dll
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\obj\Debug\net7.0\refint\InventarioLinq.dll
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\obj\Debug\net7.0\InventarioLinq.pdb
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\obj\Debug\net7.0\InventarioLinq.genruntimeconfig.cache
+C:\Users\APM02-38\Desktop\projetsNetCore\InventarioLinq\obj\Debug\net7.0\ref\InventarioLinq.dll

@@ -63,7 +63,19 @@ namespace InventarioLinq.Clases
             }
         }
 
-        
+        public void ProductosComprar(){
+            var consulta = from p in productos
+                           where p.Cantidad < 5
+                           select p;
+
+            foreach (var item in consulta)
+            {
+                Console.WriteLine(item.NombreProducto + " " + (item.StockMaximo-item.Cantidad));
+            }
+        }
+
+
+
 
 
     }
